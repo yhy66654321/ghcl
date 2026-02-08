@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ========== 以下可修改：页面标题 ========== -->
+    <title>观海沧澜 | 个人导航</title>
+    <style>
+        /* ========== 基础样式重置 ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ========== 页面主体 ========== */
+        body {
+            /* 系统默认字体 */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            /* 全屏高度 */
+            min-height: 100vh;
+            /* 弹性布局，内容垂直居中 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* ========== 此处可修改背景图 ========== */
+            background: url('bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            /* 文字颜色 */
+            color: #333;
+        }
+
+        /* 背景遮罩层，让文字更清晰 */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.7);
+            z-index: -1;
+        }
+
+        /* ========== 主标题 ========== */
+        .main-title {
+            /* ========== 以下可修改：主标题文字大小 ========== */
+            font-size: 3rem;
+            font-weight: 300;
+            letter-spacing: 0.5rem;
+            margin-bottom: 4rem;
+            color: #2c2c2c;
+        }
+
+        /* ========== 进入按钮 ========== */
+        .enter-btn {
+            /* ========== 以下可修改：按钮文字 ========== */
+            display: inline-block;
+            padding: 1rem 3rem;
+            font-size: 1.1rem;
+            color: #fff;
+            background: #333;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            letter-spacing: 0.1rem;
+        }
+
+        .enter-btn:hover {
+            background: #555;
+            transform: translateY(-2px);
+        }
+
+        /* ========== 页脚版权 ========== */
+        .footer {
+            position: fixed;
+            bottom: 2rem;
+            /* ========== 以下可修改：页脚文字 ========== */
+            font-size: 0.85rem;
+            color: #666;
+            letter-spacing: 0.05rem;
+        }
+
+        /* ========== 响应式适配 ========== */
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2rem;
+                letter-spacing: 0.3rem;
+            }
+            .enter-btn {
+                padding: 0.8rem 2rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ========== 以下可修改：主标题文字 ========== -->
+    <h1 class="main-title">观海沧澜</h1>
+    
+    <!-- ========== 以下可修改：按钮文字和跳转链接 ========== -->
+    <!-- 【此处可修改跳转地址】将 href 中的 # 替换为你的博客地址 -->
+    <a href="../02-主博客观海沧澜党史学习博客/index.html" class="enter-btn">进入我的博客</a>
+    
+    <!-- ========== 以下可修改：页脚版权文字 ========== -->
+    <footer class="footer">© 观海沧澜｜个人导航</footer>
+</body>
+</html>
